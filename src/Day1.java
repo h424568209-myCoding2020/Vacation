@@ -39,7 +39,21 @@ public class Day1 {
             start++;
             end--;
         }
-
+    }
+    public void  rotate1(int []nums,int k ){
+        int n = nums.length;
+        k%=n;
+        /*
+        1 2 3 4 5 6   k = 2;
+        5 6 1 2 3 4
+         */
+        for(int i = 0 ; i < k ; i++){
+            int temp = nums[i];
+            for(int j = n-1 ; j > 0 ; j--){
+                nums[j] = nums[j-1];
+            }
+            nums[0] = temp;
+        }
     }
 
     public static void main(String[] args) {
