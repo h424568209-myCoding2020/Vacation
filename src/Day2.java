@@ -1,14 +1,14 @@
 public class Day2 {
-    public int removeElement(int[] nums, int val) {
-        int j = 0 ;
-        for(int i = 0 ; i < nums.length ; i++){
-            if(nums[i]!=val){
-                nums[j] = nums[i];
-                j++;
+        public int removeElement(int[] nums, int val) {
+            int j = 0 ;
+            for(int i = 0 ; i < nums.length ; i++){
+                if(nums[i]!=val){
+                    nums[j] = nums[i];
+                    j++;
+                }
             }
+            return j;
         }
-        return j;
-    }
     public int searchInsert(int[] nums, int target) {
         int start = 0;
         int end = nums.length-1;
