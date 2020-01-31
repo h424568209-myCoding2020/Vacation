@@ -59,10 +59,8 @@ public class Day14 {
                 }
             }
         }
-
         return list;
     }
-
     public static void main(String[] args) {
         Day14 d = new Day14();
         TreeNode root = d.buildTree();
